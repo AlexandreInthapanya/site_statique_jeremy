@@ -51,12 +51,16 @@ nav a{
 
 /********************************************BODY******************************************/
 /****************************************SECTION**************************************/
-/* .logo_discord{
-    background-image: url("https://icones.pro/wp-content/uploads/2021/03/logo-discord-icone-png-violet.png");
-    background-repeat: no-repeat;
-    width:50px;
-    height: 50px;
-} */
+.logo_discord_titre{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_discord_black{
+    width:45px;
+    height: 45px;
+    padding-right:10px;
+}
 .titre_bot{
     font-size:2em;
     font-weight: bold;
