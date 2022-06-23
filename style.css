@@ -10,14 +10,15 @@ body{
 
 /*********************************HEADER****************************************/
 .nav_bar{
-    position:sticky;
+    overflow: hidden;
+    position: fixed;
     top:0;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
     height: auto;
     margin: 0;
     background-color: orange;
-    display: flex;
-    justify-content: flex-end;
     background-image:url("https://i.discord.fr/PSS.png");
 }
 .menu li{
@@ -81,7 +82,6 @@ nav a{
     background-color: orange;
     border-radius: 3px;
     box-shadow: 2px 2px 2px gold;
-    opacity:0.9;
 }
 .command_card{
     width: auto;
@@ -116,7 +116,6 @@ li{
     color:black;
     font-weight: bold;
     border:1px solid black;
-    opacity:0.9;
 }
 ol li{
     list-style-type: none;
