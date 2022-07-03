@@ -8,8 +8,13 @@ body{
     margin: auto;
 }
 
+label, #toggle{
+    display:none;
+}
+
+
 /*********************************HEADER****************************************/
-.nav_bar{
+nav{
     overflow: hidden;
     position: fixed;
     top:0;
@@ -36,7 +41,7 @@ body{
     flex-direction: column;
     margin-right: 113px;
 }
-.menu{
+nav ul{
     list-style-type: none;
     display: flex;
 }
@@ -82,12 +87,12 @@ section{
     color:tomato;   
 }
 
-/**************************************ASIDE**********************************/
 .first_card{
     /* border:1px solid black; */
-    background-color: orange;
+    background-color: yellow;
     border-radius: 3px;
     box-shadow: 2px 2px 2px gold;
+    padding-bottom:3px;
 }
 .command_card{
     width: auto;
@@ -117,11 +122,12 @@ li{
     text-align:center;
     flex-wrap: wrap;
     flex-direction:column;
-    background-image: url("https://image.shutterstock.com/image-photo/gradation-texture-260nw-1270195474.jpg");
+    background-color:rgb(181, 181, 207);
     /* background-size:cover; */
     color:black;
     font-weight: bold;
-    border:1px solid black;
+    border:1px solid orange;
+    border-radius:4px;
 }
 ol li{
     list-style-type: none;
@@ -140,6 +146,7 @@ h4{
 .image_fond_footer{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXGhQonxkp7tcavZNn7YvRoeh1AchpDH2DUgKxwLXStWlRLyR32nqBrxdazjnyVjqRNXQ&usqp=CAU");
     height: 195px;
+    margin-top: 10px;
 }
 .copyright{
     display:flex;
@@ -155,14 +162,17 @@ footer h2{
     color:brown;
     display:flex;
     justify-content: center;
+    font-size:1.3em;
+
 }
 #credit li{
     text-decoration: none;
     font-size:large;
     font-weight: bold;
-    color: rgb(24, 8, 49);  
+    color: green;  
+    margin-top: -15px;
 }
-.credit{
+footer div ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -172,7 +182,34 @@ footer h2{
 @media all and (max-width : 650px){
     body{
         width: auto;
-        background-color:darksalmon;
+        background-color:white;
+    }
+
+    /**************************************Responsive Menu Burger**********************************/
+    nav .menu_box{
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+    nav .menu_box a{
+        width:50%;
+    }
+    nav{
+        height: 50px;
+    }
+    label{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor:pointer;
+    }
+    #toggle:checked + .menu_box{
+        display:flex;
     }
 
     /**************************NAV*****************************/
@@ -201,18 +238,18 @@ footer h2{
     }
     .first_card{
         background:none;
-        border:2px solid red;
         box-shadow: none;
         border-radius: 5px;
     }
     .titre_first_card{
         text-align:center;
         color:darkgreen;
+        margin-top:10px;
     }
 
     /**********************FOOTER***************************/
     footer h2{
-        font-size:18px;
+        font-size:15px;
     }
     .copyright li{
         font-size:12px;
@@ -238,4 +275,8 @@ to {
 }
 
 /* décalage box à la fin de l'animation
+
+/**************************************Responsive Menu Burger**********************************/
+
+
 
